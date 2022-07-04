@@ -9,6 +9,7 @@ def getTotalX(a, b)
       counter += 1
     end
   end
+
   correct_elements = []
   a.each do |number|
     factors.each do |factor|
@@ -18,6 +19,7 @@ def getTotalX(a, b)
     end
   end
   correct_elements = correct_elements.uniq
+
   index = 0
   while index < correct_elements.length
     b.each do |number|
@@ -28,6 +30,7 @@ def getTotalX(a, b)
     end
     index += 1
   end
+
   index = 0
   while index < correct_elements.length
     a.each do |number|
