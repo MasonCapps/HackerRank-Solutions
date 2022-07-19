@@ -1,12 +1,12 @@
 function gradingStudents(grades) {
-  var finalGrades = [];
-  for (var index = 0; index < grades.length; index++) {
-    if (grades[index] < 38) {
-      finalGrades.push(grades[index]);
-    } else if (Math.round(grades[index] / 5) * 5 > grades[index]) {
-      finalGrades.push(Math.round(grades[index] / 5) * 5);
+  let finalGrades = [];
+  for (let i = 0; i < grades.length; i++) {
+    if (grades[i] < 38) {
+      finalGrades.push(grades[i]);
+    } else if (Math.round(grades[i] / 5) * 5 > grades[i]) {
+      finalGrades.push(Math.round(grades[i] / 5) * 5);
     } else {
-      finalGrades.push(grades[index]);
+      finalGrades.push(grades[i]);
     }
   }
   return finalGrades;
